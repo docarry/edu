@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체스판</title>
+    <style>
+        ul{
+            list-style: none;
+            width: 800px;
+        }
+        ul li{
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+            float: left;
+            transition: all 1s ease-in-out;
+        }
+        ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        ul li:nth-child(2),
+        ul li:nth-child(4),
+        ul li:nth-child(5),
+        ul li:nth-child(7),
+        ul li:nth-child(10),
+        ul li:nth-child(12),
+        ul li:nth-child(13),
+        ul li:nth-child(15){
+            background-color: #fff;
+        }
+        ul li:hover{
+            background-color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+    </ul>
+</body>
+</html>
