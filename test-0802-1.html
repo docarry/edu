@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블연습</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .table{
+            width: 800px;
+            margin: 0 auto;
+        }
+        table, th, td{
+            border: solid 1px #000;
+            border-collapse: collapse;
+        }
+        caption{
+            font-weight: bold;
+            line-height: 100px;
+            font-size: 20px;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table class="table">
+        <caption>테이블 태그 샘플태그</caption>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>타이틀이 담기는 태그</th>
+                <th>두껍고, 가운데 정렬이 기본값</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center">1</td>
+                <td>데이터가 담겨지는 태그</td>
+                <td rowspan="2">아래의 td 태그와 병합할거임</td>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>윗층에서 하나를 가져가는 바람에 여기는 td가 두개뿐이다</td>
+            </tr>
+            <tr>
+                <td class="center">3</td>
+                <td><em>정상화 된 tr층</em></td>
+                <td><strong>3개의 칸으로 정상화 되었음</strong></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="center" height="300px">옆으로 td 3개를 모두 병합<br>
+                수직, 수평정렬, 너비, 높이 옵션을 스스로 갖고있음, 속성이 무시되는 상횡이 발생하기도 함<br>
+                tr(층) 높이가 10이고, td 높이가 50이면 자식태그의 옵션을 준수하고, 부모태그의 옵션스타일 무시함.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
