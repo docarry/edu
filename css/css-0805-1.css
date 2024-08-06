@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+dl{
+    list-style: none;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+dl dt{
+    line-height: 50px;
+    background-color: #333;
+}
+dl dd{
+    line-height: 50px;
+    background-color: #ccc;
+    display: none;
+}
