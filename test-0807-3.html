@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab, 말줄임</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ol,ul,dl{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        #tab{
+            width: 40vw;
+            margin: 5vh auto 0;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        #tab > li{
+            width: 25%;
+            border-right: solid 1px #000;
+        }
+        #tab > li:last-child{
+            border-right: 0;
+        }
+        #tab > li input{
+            display: none;
+        }
+        #tab > li label{
+            display: block;
+            background-color: #ccc;
+            color: #000;
+            text-align: center;
+            line-height: 3;
+        }
+        #tab .ab-box{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 300px;
+            background-color: #fff;
+            border: solid 1px #000;
+            box-sizing: border-box;
+            /* border-top: 0; */
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #tab > li input:checked ~ .ab-box{
+            z-index: 99;
+        }
+        #tab > li input:checked + label{
+            background-color: #333;
+            color: #fff;
+        }
+        #tab .notice-content li a{
+            color: #000;
+            /* display: flex;
+            align-items: center;
+            gap: 10px; */
+            display: block; /*반드시 블록요소여야함*/
+            width: 80%; /*반드시 위드값이 존재해야함*/
+            overflow: hidden; /*너비를 넘어가면 안보이게*/
+            white-space: nowrap; /*두줄처리 방지*/
+            text-overflow: ellipsis; /*...처리*/
+        }
+        /* #tab .notice-content li a::before{
+            content: "";
+            width: 8px;
+            height: 8px;
+            background-color: #000;
+            display: block;
+            border-radius: 50%;
+        } */
+    </style>
+</head>
+<body>
+    <!-- ul#tab>li*2>input[type="radio"]+label+div.ab-box>p{컨텐츠임$} -->
+    <ul id="tab">
+        <li>
+            <input type="radio" id="notice1" name="tab-box" checked>
+            <label for="notice1">공지사항</label>
+            <div class="ab-box">
+                <ul class="notice-content">
+                    <li><a href="#">공지사항 안내문 입니다. 좀 길게 갈거거든여? 쭈욱쭉 길게~~~~갈겁니다.</a></li>
+                    <li><a href="#">공지사항 안내문 입니다. 좀 길게 갈거거든여? 쭈욱쭉 길게~~~~갈겁니다.</a></li>
+                    <li><a href="#">공지사항 안내문 입니다. 좀 길게 갈거거든여? 쭈욱쭉 길게~~~~갈겁니다.</a></li>
+                    <li><a href="#">공지사항 안내문 입니다. 좀 길게 갈거거든여? 쭈욱쭉 길게~~~~갈겁니다.</a></li>
+                    <li><a href="#">공지사항 안내문 입니다. 좀 길게 갈거거든여? 쭈욱쭉 길게~~~~갈겁니다.</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <input type="radio" id="board1" name="tab-box">
+            <label for="board1">게시판</label>
+            <div class="ab-box">
+                <p>게시판 리스트가 들어올거임</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" id="notice2" name="tab-box">
+            <label for="notice2">공지사항</label>
+            <div class="ab-box">
+                <p>공지사항 들어올거임</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" id="board2" name="tab-box">
+            <label for="board2">게시판</label>
+            <div class="ab-box">
+                <p>게시판 리스트가 들어올거임</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
