@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#open-btn{
+    display: block;
+    font-size: 2em;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 4;
+    width: 20%;
+    border: 0;
+    margin: 100px auto 0;
+    box-shadow: 15px 15px 20px;
+    cursor: pointer;
+}
+#popup-box{
+    position: fixed;
+    width: 600px;
+    height: 400px;
+    background-color: #333;
+    color: #fff;
+    top: calc(50% - 200px);
+    left: calc(50% - 300px);
+    text-align: right;
+    display: none;
+}
+#popup-box span{
+    display: inline-block;
+    font-size: 3em;
+    cursor: pointer;
+    padding: 20px;
+}
+#popup-box p{
+    margin-top: 100px;
+    text-align: center;
+}
+.slide{
+    display: block !important;
+}

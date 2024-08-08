@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,dl{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#family{
+    width: 300px;
+    margin: 40vh auto 0;
+    position: relative;
+}
+#family button{
+    display: block;
+    width: 100%;
+    line-height: 3;
+    background-color: #333;
+    color: #fff;
+    border: 0;
+}
+#family ul{
+    text-align: center;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+}
+#family ul li:last-child a{
+    border-bottom: 0;
+}
+#family ul li a{
+    display: block;
+    width: 100%;
+    background-color: #333;
+    line-height: 3;
+    background-color: #333;
+    color: #fff;
+    border-bottom: solid 1px #fff;
+}
+.slide{
+    height: 245px !important;
+}
