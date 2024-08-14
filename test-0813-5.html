@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 로그인</title>
+    <link rel="stylesheet" href="./css/test-0813-5.css">
+</head>
+<body>
+    <form id="join">
+        <fieldset>
+            <h2>LOGIN</h2>
+            <ul class="login-id-ps">
+                <li>
+                    <input type="text" id="id" name="id" placeholder="아이디 또는 전화번호" required autofocus>
+                </li>
+                <li>
+                    <input type="password" id="pw" name="pw" placeholder="비밀번호" required>
+                </li>
+            </ul>
+            <div class="autologin">
+                <span>
+                    <input type="checkbox" id="checkBox" name="checkBox" value="check">
+                    <label for="checkBox">로그인 상태 유지</label>
+                </span>
+                <a href="#">아이디(이메일)/비밀번호 찾기</a>
+            </div>
+            <input type="submit" value="로그인">
+            <a href="#">회원가입</a>
+            <ul class="snsjoin">
+                <li class="naver"><a href="#">네이버</a></li>
+                <li class="google"><a href="#">구글</a></li>
+                <li class="facebox"><a href="#">페이스북</a></li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

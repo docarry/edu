@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol,dl{
+    list-style: none;
+}
+
+#join{
+    width: 500px;
+    margin: 50px auto 0;
+}
+
+#join h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.login-id-ps li{
+    padding: 0 0 20px 0;
+}
+
+input[type="email"]{
+    display: block;
+    width: 400px;
+    line-height: 30px;
+    margin: 0 auto;
+    text-indent: 1em;
+    outline: none;
+} 
+input[type="password"]{
+    display: block;
+    width: 400px;
+    line-height: 30px;
+    margin: 0 auto;
+    text-indent: 1em;
+    letter-spacing: 2px;
+}
+
+input[type="checkbox"]{
+    accent-color: #f00;
+}
+
+.autologin{
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 400px;
+    line-height: 30px;
+    margin: 20px auto;
+    background-color: #00f;
+    color: #fff;
+    font-size: 1em;
+}
+fieldset > a{
+    display: block;
+    width: 400px;
+    line-height: 30px;
+    margin: 20px auto;
+    border: solid 1px #333;
+    color: #000;
+    box-sizing: border-box;
+    text-align: center;
+}
+.snsjoin{
+    margin: 30px auto;
+    display: flex;
+    width: 400px;
+    gap: 10px;
+}
+.snsjoin a{
+    display: block;
+    color: #fff;
+}
+.snsjoin li{
+    margin: 10px auto;
+    width: 33.33%;
+}
+.naver{
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    background-color: #008000;
+    color: #fff;
+}
+.google{
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    background-color: #4c4c75;
+    color: #fff;
+}
+.facebox{
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    background-color: #00f;
+    color: #fff;
+}
+.autologin a::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: solid 2px #00f;
+    border-top: solid 2px #00f;
+    transform: rotate(45deg);
+}

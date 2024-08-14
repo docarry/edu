@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠팡 로그인</title>
+    <link rel="stylesheet" href="./css/test-0813-4.css">
+</head>
+<body>
+    <form id="join">
+        <fieldset>
+            <!-- <legend>회원가입</legend> -->
+            <h2>LOGIN</h2>
+            <ul class="login-id-ps">
+                <li>
+                    <input type="email" id="email" name="email" placeholder="아이디(이메일)" pattern=".+@example\.com" required autofocus>
+                </li>
+                <li>
+                    <input type="password" id="password" name="password" placeholder="비밀번호" required>
+                </li>
+            </ul>
+            <div class="autologin">
+                <span>
+                    <input type="checkbox" id="checkBox" name="checkBox" value="check">
+                    <label for="checkBox">자동로그인</label>
+                </span>
+                <a href="#">아이디(이메일)/비밀번호 찾기</a>
+            </div>
+            <input type="submit" value="로그인">
+            <a href="#">회원가입</a>
+            <ul class="snsjoin">
+                <li class="naver"><a href="#">네이버</a></li>
+                <li class="google"><a href="#">구글</a></li>
+                <li class="facebox"><a href="#">페이스북</a></li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

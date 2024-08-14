@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol, dl{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+input[name="checkBox"]{
+    accent-color: #008000;
+}
