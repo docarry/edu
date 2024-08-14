@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#open-btn{
+    display: block;
+    font-size: 2em;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 4;
+    width: 20%;
+    border: 0;
+    margin: 100px auto 0;
+    box-shadow: 15px 15px 20px;
+    cursor: pointer;
+}
+#popup-box{
+    position: fixed;
+    max-width: 800px;
+    min-width: 300px;
+    max-height: 400px;
+    min-height: 200px;
+    width: calc(100vw - 40px);
+    height: calc(100vh - 200px);
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#popup-box span{
+    display: inline-block;
+    font-size: 3em;
+    cursor: pointer;
+    padding: 20px;
+}
+#popup-box p{
+    margin-top: 100px;
+    text-align: center;
+}
+.slide{
+    display: block !important;
+}
