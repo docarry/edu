@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form01 문제</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/form01.css">
+    
+</head>
+<body class="gothic-a1-regular">
+    <form id="join-form01">
+        <fieldset>
+            <h2>로그인</h2>
+            <ul class="idpw">
+                <li>
+                    <input type="text" name="id" placeholder="아이디" maxlength="12" minlength="5">
+                </li>
+                <li>
+                    <input type="password" name="pw" placeholder="패스워드" maxlength="10" minlength="6">
+                </li>
+            </ul>
+            <input type="checkbox" id="login-check" name="logincheck" value="loginCheck">
+            <label for="login-check">자동로그인</label>
+            <input type="submit" value="확인">
+            <ul class="join-box">
+                <li>
+                    <a href="#">회원가입</a><span></span>
+                </li>
+                <li>
+                    <a href="#">아이디/비밀번호찾기</a>
+                </li>
+            </ul>
+            <span class="medleline"></span>
+            <ul class="snsjoin">
+                <li class="facebox"><a href="#">페이스북</a></li>
+                <li class="google"><a href="#">구글</a></li>
+                <li class="naver"><a href="#">네이버</a></li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
