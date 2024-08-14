@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+main{
+    width: 1280px;
+    height: 600px;
+    display: flex;
+}
+#btn{
+    width: 20%;
+    margin: 10px;
+}
+#img{
+    margin: 0 auto;
+}
+.any{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top: solid 10px #00f;
+    border-right: solid 10px #f00;
+    border-bottom: solid 10px #00f;
+    border-left: solid 10px #f00;
+    background: url('../img/img_0705/best03.jpg') no-repeat 30% / cover;
+
+    animation-name: moveInOut;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    position: relative;
+    
+}
+
+@keyframes moveInOut{
+    0%{
+        transform-origin
+    }
+    25%{
+        top: 25%;
+        left: 50%;
+    }
+    50%{
+        top: 50%;
+        left: 0;
+    }
+    75%{
+        top: 75%;
+        left: 50%;
+    }
+    100%{
+        top: 100%;
+        left: 0;
+    }
+}

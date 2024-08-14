@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.any{
+    font-size: 3em;
+    /* animation-name: fadeInOut;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both; */
+    animation: fadeInOut 1s ease-in-out 3s infinite alternate both running;
+}
+
+@keyframes fadeInOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        color: #f00;
+    }
+}
