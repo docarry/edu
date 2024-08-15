@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 연습</title>
+    <style>
+        #tb{
+            width: 800px;
+            margin: 0 auto;
+            
+        }
+        table, th, td{
+            border: dashed 1px #000;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table id="tb">
+        <caption>테이블 연습입니다</caption>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>타이틀1</th>
+                <th>타이틀2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>데이터1</td>
+                <td rowspan="2">데이터2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>데이터3</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>데이터4</td>
+                <td>데이터5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="center">데이터 넣기<br>
+                    데이터 넣기기기기기기<br>
+                    데이터 넣기기기
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
