@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,dl,ol{
+    list-style: none;
+}
+html,
+body{
+    font-size: 14px;
+}
+
+.list{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list li{
+    width: 25%;
+    height: 300px;
+    background-color: #ff0;
+    margin-bottom: 1%;
+    font-size: 2rem;
+}
+.list li:nth-child(odd){
+    background-color: #8a2be2;
+}
+
+@media screen and (max-width : 1279px){
+    .list li{
+        width: 33.33%;
+    }
+}
+@media screen and (max-width : 767px){
+    .list li{
+        width: 50%;
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width : 374px){
+    .list li{
+        display: block;
+    }
+    .list li{
+        width: 100%;
+        font-size: 1.4rem;
+    }
+}
