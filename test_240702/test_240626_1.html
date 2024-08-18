@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>너무 어렵띠요</title>
+    <style>
+        ul{
+            width: 800px;
+            list-style: none;
+        }
+        ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        ul li{
+            float: left;
+        }
+        ul li a{
+            text-decoration: none;
+            color: #000;
+        }
+        ul li:nth-child(1){
+            width: 630px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">로고</a>
+        </li>
+        <li>
+            <a href="#">메뉴1</a>
+        </li>
+        <li>
+            <a href="#">메뉴2</a>
+        </li>
+        <li>
+            <a href="#">메뉴3</a>
+        </li>
+        <li>
+            <a href="#">메뉴4</a>
+        </li>
+    </ul>
+</body>
+</html>

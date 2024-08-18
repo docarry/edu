@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성공하고싶따고!!!</title>
+    <style>
+        body{
+            width: 800px;
+        }
+        div{
+            width: 250px;
+            height: 100px;
+            float: left;
+        }
+        body::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        div ul{
+            list-style: none;
+        }
+        div ul li{
+            float: left;
+        }
+        div ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        div ul li a{}
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a href="#">로고</a>
+            </li>
+        </ul>
+    </div>
+    <div></div>
+    <div>
+        <ul>
+            <li>
+                <a href="#">메뉴1</a>
+            </li>
+            <li>
+                <a href="#">메뉴2</a>
+            </li>
+            <li>
+                <a href="#">메뉴3</a>
+            </li>
+            <li>
+                <a href="#">메뉴4</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
