@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선생님 답변 완성본</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        div{
+            width: 1280px;
+            background-color: #333;
+            margin: 0 auto;
+        }
+        div::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        ul{
+            list-style: none;
+        }
+        div > a{
+            color: #fff;
+            float: left;
+            line-height: 100px;
+            margin-left: 20px;
+        }
+        div ul{
+            float: right;
+            width: 50%;
+            text-align: center;
+        }
+        div ul:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        div ul li{
+            float: left;
+            width: 25%;
+        }
+        div ul li a{
+            color: #fff;
+            line-height: 100px;
+            display: block;
+            text-align: center;
+        }
+        div ul li:hover a{
+            background-color: #fff;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="/">메인로고</a>
+        <ul>
+            <li>
+                <a href="#">메뉴1</a>
+            </li>
+            <li>
+                <a href="#">메뉴2</a>
+            </li>
+            <li>
+                <a href="#">메뉴3</a>
+            </li>
+            <li>
+                <a href="#">메뉴4</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

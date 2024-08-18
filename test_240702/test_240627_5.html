@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub9</title>
+    <style>
+        *{                  /*모든 태그 전체를 불러서 초기화 시킴*/
+            margin: 0;      /*콘텐츠 기준 바깥쪽 여백=마진*/
+            padding: 0;     /*콘텐츠 기준 안쪽 여백=패딩*/
+        }
+        div{
+            width: 1280px;  /*너비값 지정*/
+            background-color: #333; /*배경값 지정*/
+            margin: 0 auto; /*바깥쪽 여백 : 상하0 좌우 자동 지정 블럭태그의 가운데 보내기 위함*/
+        }
+        a{
+            text-decoration: none; /*a태그의 텍스트 속성 없앰(색상파랑,밑줄)*/
+        }
+        ul{
+            list-style: none; /*ul의 리스트 스타일 없앰*/
+        }
+        div > a{ /*(모든)div 바로 밑에 있는 자식태그 중 모든 a태그야 들어*/
+            float: left;  /*div a 태그를 왼쪽으로 보냄*/
+            color: #fff;
+            line-height: 100px; /*div a 태그 행의 높이를 높여 글자를 가운데로 맞춤*/
+            margin-left: 20px; /*div a 태그 왼쪽 여백 지정*/
+        }
+        div::after{  /*float값을 준 a태그의 부모인 div에 after를 씀*/
+            content: ""; /*콘텐츠 자리를 만들어준다*/
+            display: block; /*부모 기준 위드값 100%*/
+            clear: both; /*양쪽 플루트 값 지움*/
+        }
+        div ul{     
+            width: 50%; /*div 전체의 50%를 ul 태그 width값으로 쓰겠다*/
+            float: right; /*div ul 태그를 오른쪽으로 보냄. 형제 태그가 없으니 역순이 되어도 상관없으니까*/
+            text-align: center; /*항상 왼쪽 기준으로 붙어있으니까 가운데로 옮기고 싶다. 디스플레이 인라인,인라인블럭,텍스트만 먹음 a태그값이 텍스트니까 사용*/
+        }
+        div ul li{
+            width: 25%; /*ul의 50%를 100으로 두고 4로 나눠서 25%씩*/
+            float: left; /*ul 속 li 값을 왼쪽부터 정렬*/
+        }
+        div ul:after{  /*float값을 준 li태그의 부모인 ul에 after를 씀*/
+            content: "";
+            display: block;
+            clear: both;
+        }
+        div ul li a{
+            color: #fff;
+            line-height: 100px; /*행의 높이를 높여 글자를 가운데로 맞춤*/
+            display: block; /*높이값을 지정했으니까 너비값을 100%먹으라고 늘려줌. a는 인라인태그라 콘텐츠 영역만큼만*/
+        }
+        div ul li:hover a{
+            background-color: #fff;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">메인로고</a>
+        <ul>
+            <li>
+                <a href="#">메뉴1</a>
+            </li>
+            <li>
+                <a href="#">메뉴2</a>
+            </li>
+            <li>
+                <a href="#">메뉴3</a>
+            </li>
+            <li>
+                <a href="#">메뉴4</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
