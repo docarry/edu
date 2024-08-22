@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보강 선생님 코드</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        div{
+            width: 1000px;
+            background-color: #333;
+            margin: 0 auto;
+        }
+        div > a{
+            color: #ff0000;
+            float: left;
+            line-height: 100px;
+            display: block;
+            margin-left: 20px;
+        }
+        div ul{
+            float: right;
+            width: 50%;
+            text-align: center;
+        }
+        div ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        div ul li{
+            float: left;
+            width: 20%;
+        }
+        div ul li a{
+            color: #ff0000;
+            line-height: 100px;
+            display: block;
+        }
+        div::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        div ul li:hover a{
+            background-color: #fff;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">메인로고</a>
+        <ul>
+            <li>
+                <a href="#">메뉴1</a>
+            </li>
+            <li>
+                <a href="#">메뉴2</a>
+            </li>
+            <li>
+                <a href="#">메뉴3</a>
+            </li>
+            <li>
+                <a href="#">메뉴4</a>
+            </li>
+            <li>
+                <a href="#">메뉴5</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
