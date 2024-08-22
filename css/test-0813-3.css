@@ -29,7 +29,7 @@ main{
     border-left: solid 10px #f00;
     background: url('../img/img_0705/best03.jpg') no-repeat 30% / cover;
 
-    animation-name: moveInOut;
+    /* animation-name: moveInOut;
     animation-duration: 2s;
     animation-delay: 3s;
     animation-direction: alternate;
@@ -37,11 +37,13 @@ main{
     animation-play-state: running;
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
-    position: relative;
+    position: relative; */
+
+    animation: moveInOut 3s linear 1s infinite alternate both running;
     
 }
 
-@keyframes moveInOut{
+/* @keyframes moveInOut{
     0%{
         transform-origin
     }
@@ -60,5 +62,20 @@ main{
     100%{
         top: 100%;
         left: 0;
+    }
+} */
+
+@keyframes moveInOut{
+    0%{
+        transform: translateX(0) translateY(0);
+    }
+    25%{
+        transform: translateX(60px) translateY(100px);
+    }
+    50%{
+        transform: translateX(0) translateY(200px);
+    }
+    100%{
+        transform: translateX(60px) translateY(300px);
     }
 }
