@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id, class 연습</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        #container{
+            width: 800px;
+            margin: 0 auto;
+        }
+        #container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #container li{
+            width: 200px;
+            height: 200px;
+            background-color: #333;
+            float: left;
+        }
+        #container .content{
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <ul id="container">
+        <li class="content">1</li>
+        <li>2</li>
+        <li class="content">3</li>
+        <li>4</li>
+
+        <li>5</li>
+        <li class="content">6</li>
+        <li>7</li>
+        <li class="content">8</li>
+
+        <li class="content">9</li>
+        <li>10</li>
+        <li class="content">11</li>
+        <li>12</li>
+
+        <li>13</li>
+        <li class="content">14</li>
+        <li>15</li>
+        <li class="content">16</li>
+    </ul>
+</body>
+</html>

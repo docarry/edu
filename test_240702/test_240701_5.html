@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>열려라 메뉴창!</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        div{
+            width: 300px;
+            background-color: #333;
+        }
+        div h1{
+            text-align: center;
+        }
+        div h1 a{
+            display: block;
+            color: #fff;
+            line-height: 50px;
+        }
+        div ul{
+            text-align: center;
+        }
+        div ul .test01{
+            height: 50px;
+            overflow: hidden;
+            transition: all 1s ease-in-out;
+        }
+        div ul .test01:hover{
+            height: 300px;
+        }
+        div ul li a{
+            display: block;
+            color: #fff;
+            line-height: 50px;
+        }
+        div ul .test01 ul{}
+        div ul .test01 .test02 li{
+            background-color: #a3bae7;
+        }
+        div ul .test01 .test02 li a{
+            display: block;
+            color: #333;
+            transition: all 0.5s ease-in-out;
+        }
+        div ul .test01 .test02 li:hover a{
+            background-color: #fff;
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <!-- div>h1>a[href="#"]{메인로고}^ul>li*4>a[href="#"]{메뉴$}+ul>li*5>a[href="#"]{소메뉴} -->
+    <div>
+        <h1><a href="#">메인로고</a></h1>
+        <ul>
+            <li class="test01">
+                <a href="#">메뉴1</a>
+                <ul class="test02">
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                </ul>
+            </li>
+            <li class="test01">
+                <a href="#">메뉴2</a>
+                <ul class="test02">
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                </ul>
+            </li>
+            <li class="test01">
+                <a href="#">메뉴3</a>
+                <ul class="test02">
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                </ul>
+            </li>
+            <li class="test01">
+                <a href="#">메뉴4</a>
+                <ul class="test02">
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                    <li><a href="#">소메뉴</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>흰색에 빨간줄!!</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        div{
+            width: 1000px;
+            background-color: #333;
+            margin: 0 auto;
+        }
+        div::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        div > a{
+            float: left;
+            color: #fff;
+            line-height: 50px;
+            margin-left: 20px;
+            transition: all 1s ease-in-out;
+            display: block;
+        }
+        div > a::after{
+            content: "";
+            display: block;
+            background-color: #f00;
+            width: 0;
+            height: 10px;
+            transition: all 1s ease-in-out;
+        }
+        div ul{
+            float: right;
+            width: 50%;
+            text-align: center;
+        }
+        div ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        div ul li{
+            float: left;
+            width: 20%;
+        }
+        div ul li a{
+            color: #fff;
+            display: block;
+            transition: all 1s ease-in-out;
+            line-height: 50px;
+        }
+        div ul li a::after{
+            content: "";
+            display: block;
+            background-color: #f00;
+            width: 0;
+            height: 10px;
+            transition: all 1s ease-in-out;
+        }
+        div ul li:hover a{
+            background-color: #fff;
+            color: #333;
+
+        }
+        div ul li:hover a::after{
+            width: 100%;
+            background-color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">메인로고</a>
+        <ul>
+            <li>
+                <a href="#">메뉴1</a>
+            </li>
+            <li>
+                <a href="#">메뉴2</a>
+            </li>
+            <li>
+                <a href="#">메뉴3</a>
+            </li>
+            <li>
+                <a href="#">메뉴4</a>
+            </li>
+            <li>
+                <a href="#">메뉴5</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가운데만 빨강이래요(검수완료)</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        div{
+            width: 1280px;
+            background-color: #333;
+            margin: 0 auto;
+            text-align: center;
+        }
+        div ul{
+            width: 80%;
+            margin: 0 auto;
+        }
+        div ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        div ul li{
+            float: left;
+            width: 20%;
+        }
+        div ul li a{
+            color: #fff;
+            display: block;
+            line-height: 50px;
+            transition: all 1s ease-in-out;
+        }
+        div ul li:hover a{
+            background-color: #fff;
+            color: #333;
+        }
+        div ul li:nth-child(3) a{
+            background-color: #f00;
+            color: #800080;
+        }
+        div ul li:nth-child(3):hover a{
+            background-color: #333;
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a href="#">메뉴1</a>
+            </li>
+            <li>
+                <a href="#">메뉴2</a>
+            </li>
+            <li>
+                <a href="#">메인로고</a>
+            </li>
+            <li>
+                <a href="#">메뉴3</a>
+            </li>
+            <li>
+                <a href="#">메뉴4</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
