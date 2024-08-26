@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body{
+    font-family: 'S-CoreDream-3Light';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+ul{
+    width: 90%;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+ul li{
+    width: 18%;
+}
+ul li span{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+ul li span img{
+    display: block;
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+}
+ul li a{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.6s ease-in-out;
+}
+ul li a::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: solid 2px #000;
+    border-right: solid 2px #000;
+    transform: rotate(45deg);
+    margin-left: 10px;
+}
+ul li:hover span img{
+    transform: scale(1.2);
+}
+ul li:hover a{
+    color: #f00;
+    font-size: 16px;
+}

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body{
+    font-family: 'SDSamliphopangche_Outline';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+#one{
+    width: 90%;
+    margin: 200px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+#one li{
+    width: 18%;
+}
+#one li span{
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+    border: solid 2px #000;
+    box-shadow: 6px 6px 6px #ccc;
+}
+#one li span img{
+    display: block;
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.6s ease-in-out;
+}
+#one li a{
+    display: block;
+    line-height: 50px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+#one li a::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: solid 4px #000;
+    border-right: solid 4px #000;
+    transform: rotate(45deg);
+}
+#one li:hover span img{
+    transform: scale(1.2);
+}
+#one li:hover a{
+    color: #f00;
+    font-size: 20px;
+}
+#one li:nth-child(1) span{
+    transform: rotate(3deg);
+}
+#one li:nth-child(2) span{
+    transform: rotate(-3deg);
+}
+#one li:nth-child(3) span{
+    transform: rotate(3deg);
+}
+#one li:nth-child(4) span{
+    transform: rotate(-3deg);
+}
+#one li:nth-child(5) span{
+    transform: rotate(3deg);
+}
