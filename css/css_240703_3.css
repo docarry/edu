@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#wrap{
+    width: 400px;
+    text-align: center;
+}
+#wrap h1{}
+#wrap h1 a{
+    display: block;
+    line-height: 5;
+    color: #fff;
+    background-color: #000;
+}
+#wrap .depth-01{}
+#wrap .depth-01 > li{}
+#wrap .depth-01 > li > a{
+    display: block;
+    line-height: 50px;
+    background-color: #333;
+    color: #fff;
+}
+#wrap .depth-02{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+}
+#wrap .depth-02 li{}
+#wrap .depth-02 li a{
+    display: block;
+    line-height: 50px;
+    background-color: #ccc;
+    color: #000;
+}
+#wrap .depth-01 > li:hover .depth-02{
+    height: 250px;
+}
+#wrap .depth-01 > li:hover > a,
+#wrap .depth-02 li:hover a{
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+}
+#wrap .depth-02 li a::before{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.one + a{} /* one 바로 밑에 동생 들어 */
+.one + a + a{} /* one 밑에 3번 a 들어 */
+.one ~ a{} /* one 동생들 중에 a 태그 들어 (2,3번 부를때) */
