@@ -1,0 +1,18 @@
+/* div{
+    width: 50px;
+    height: 50px;
+    border-top: solid 10px #000;
+    border-right: solid 10px #000;
+    transform: scale(1) rotate(45deg);
+}
+div:hover{
+    transform: scale(1.6) rotate(45deg);
+} */
+#top{
+    width: 0;
+    height: 0;
+    border-top: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+    border-left: solid 20px #000;
+    border-right: solid 20px transparent;
+}
