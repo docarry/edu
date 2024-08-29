@@ -1,0 +1,49 @@
+.jua-regular {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#header{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+#header h1 a{
+    display: block;
+    color: #fff;
+    line-height: 100px;
+    margin-left: 50px;
+}
+#header .nav{
+    width: 70%;
+}
+#header .nav ul{
+    display: flex;
+}
+#header .nav ul li{
+    width: 20%;
+}
+#header .nav ul li a{
+    display: block;
+    color: #fff;
+    line-height: 100px;
+    transition: all 0.6s ease-in-out;
+}
+#header .nav ul li:hover a{
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
