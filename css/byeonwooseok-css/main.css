@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'YEONGJUSeonbiTTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/YEONGJUSeonbiTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* <weight>: Use a value from 300 to 900 */
+.merienda-900 { 
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    font-family: 'YEONGJUSeonbiTTF';
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+#header{
+    width: 100%;
+}
+#header .mainimg img{
+    display: block;
+    width: 100%;
+}
+#header h1 a{
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    color: #000;
+    border: solid 4px #000;
+}
+#header .menu01{
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0;
+    text-align: center;
+}
+#header .menu01 > li{
+    padding: 0 100px;
+    position: relative;
+}
+#header .menu01 > li > a{
+    display: block;
+    color: #000;
+    line-height: 50px;
+    font-weight: bold;
+}
+#header .menu02{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+}
+#header .menu02 li a{
+    display: block;
+    color: #000;
+    line-height: 50px;
+    font-weight: bold;
+}
+#header .menu01 li:hover .menu02{
+    height: 200px;
+}
+#main{}
+#se-bestimg .bestimg{
+    width: 80%;
+    height: 100px;
+    background-color: #000;
+    margin: 0 auto;
+}
+#se-bestimg .bestimg li{
+    width: 25%;
+    height: 300px;
+    background-color: #ccc;
+}
+#se-bestimg .bestimg li img{}
+
+#card{
+    width: 90%;
+    margin: 100px auto 0;
+}
+#card .one{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+#card .one li{
+    width: 16%;
+}
+#card .one li span{
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+    border: solid 2px #000;
+    box-shadow: 6px 6px 6px #ccc;
+}
+#card .one li span img{
+    display: block;
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.6s ease-in-out;
+}
+#card .one li a{
+    display: block;
+    line-height: 50px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+#card .one li a::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: solid 4px #000;
+    border-right: solid 4px #000;
+    transform: rotate(45deg);
+}
+#card .one li:hover span img{
+    transform: scale(1.2);
+}
+#card .one li:hover a{
+    color: #00F;
+    font-size: 20px;
+}
+#card .one li:nth-child(1) span{
+    transform: rotate(3deg);
+}
+#card .one li:nth-child(2) span{
+    transform: rotate(-3deg);
+}
+#card .one li:nth-child(3) span{
+    transform: rotate(3deg);
+}
+#card .one li:nth-child(4) span{
+    transform: rotate(-3deg);
+}
+#card .one li:nth-child(5) span{
+    transform: rotate(3deg);
+}
