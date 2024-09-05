@@ -17,12 +17,10 @@ a{
     margin: 0 auto;
 }
 #header{
-    background-color: #fff;
+    background-color: #f5f5dc;
     height: 100px;
     display: flex;
     justify-content: space-between;
-    border-bottom: solid 2px #333;
-    box-sizing: border-box;
 }
 #header h1{}
 #header h1 a{
@@ -54,9 +52,10 @@ a{
     display: block;
     line-height: 60px;
     transition: all 0.6s ease-in-out;
+    background-color: #f5f5dc;
 }
 .depth01:hover .depth02{
-    height: 202px;
+    height: 200px;
 }
 
 .depth02{
@@ -75,22 +74,12 @@ a{
     display: block;
     line-height: 50px;
     transition: all 0.6s ease-in-out;
+    background-color: #f5f5dc;
 }
 .depth01 > li:hover > a,
 .depth02 li:hover a{
-    background-color: #333;
-    color: #fff;
+    background-color: #ffa000;
     font-weight: bold;
-}
-
-.depth01 > li:first-child .depth02{
-    border-left: solid 2px #333;
-}
-.depth01 > li:last-child .depth02{
-    border-right: solid 2px #333;
-}
-.depth02 li:last-child a{
-    border-bottom: solid 2px #333;
 }
 
 /* ************************************ */
@@ -99,4 +88,192 @@ a{
 #main-banner ul{
     height: 300px;
     background-color: #ccd;
+}
+
+/*  */
+
+#content{}
+#content > ul{
+    display: flex;
+}
+#content > ul > li{
+    width: 33.333%;
+}
+
+#content .tab-box{}
+#content .tab-box > ul{
+    display: flex;
+    position: relative;
+}
+#content .tab-box > ul > li{}
+#content .tab-box > ul > li input{
+    display: none;
+}
+#content .tab-box > ul > li label{
+    display: block;
+    line-height: 50px;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.ab-box{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5dc;
+    z-index: 1;
+    height: 150px;
+}
+
+
+.notice{}
+
+.notice dl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.notice dl dt{}
+.notice dl dt a{}
+.notice dl dd{}
+.notice dl dd a{}
+.notice .ab-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.gallery ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.gallery ul li{}
+.gallery ul li a{}
+.gallery .ab-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content .tab-box > ul > li input:checked ~ .ab-box{
+    z-index: 99;
+}
+#content .tab-box > ul > li input:checked + label{
+    background-color: #ffa000;
+    color: #fff;
+}
+
+.middle-bannder{}
+.middle-bannder a{
+    display: block;
+    height: 200px;
+    background: url('../img/a-1/banner.jpg') no-repeat center / cover;
+}
+
+.direct{
+    height: 200px;
+    background: url('../img/a-1/direct.jpg') no-repeat center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.direct button{
+    display: block;
+    width: 200px;
+    line-height: 50px;
+    text-align: center;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* 푸터 */
+
+#footer{}
+#footer > ul{
+    display: flex;
+    height: 100px;
+}
+#footer > ul > li{
+}
+.bottom-logo{
+    width: 20%;
+}
+.bottom-logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.bottom-logo a img{
+    display: block;
+    filter: grayscale(100%);
+}
+.copy{
+    width: 60%;
+}
+.copy p{
+    line-height: 100px;
+    text-align: center;
+}
+.sns-icon{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sns-list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sns-list li{}
+.sns-list li a{
+    display: block;
+}
+.sns-list li a img{
+    display: block;
+    border-radius: 10px;
+}
+
+#popup-box{
+    position: fixed;
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    border: solid 1px #333;
+    top: calc(50% - 150px);
+    left: calc(50% - 300px);
+    z-index: 999;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 40px;
+    display: none;
+}
+#popup-box h3{
+    margin: 40px 0;
+}
+#popup-box p{}
+#close-btn{
+    position: absolute;
+    padding: 20px;
+    top: 5%;
+    right: 5%;
+    background-color: #fff;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: #ccc 6px 6px 6px;
+    cursor: pointer;
+}
+.show{
+    display: block !important;
 }
