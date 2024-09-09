@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 태그의 종류와 사용</title>
+    <link rel="stylesheet" href="./css/css-0722-join.css">
+</head>
+<body>
+    <form id="join" action="./test-0722-join_s.html">
+        <fieldset>
+            <legend>회원가입</legend>
+            <p>
+                <span class="form_title">이름 : </span>
+                <input type="text" placeholder="한글로 입력해 주세요." neme="neme" required autofocus>
+            </p>
+            <p>
+                <span class="form_title">아이디 : </span>
+                <input type="text" placeholder="영문 및 숫자 조합만 가능" neme="ID" required>
+            </p>
+            <p>
+                <span class="form_title">비밀번호 : </span>
+                <input type="password" placeholder="영문 및 숫자 조합만 가능" neme="PW" required>
+            </p>
+            <p>
+                <span class="form_title">성별 : </span>
+                <input type="radio" id="man" value="man" name="gender" checked>
+                <label for="man">남자</label>
+                <input type="radio" id="woman" value="woman" name="gender">
+                <label for="woman">여자</label>
+                <input type="radio" id="nocoment" value="nocoment" name="gender">
+                <label for="nocoment">말하고싶지않음</label>
+            </p>
+            <p>
+                <span class="form_title">관심사 : </span>
+                <input type="checkbox" id="check_01" value="fav_01" name="chech_fav" checked>
+                <label for="check_01">사회</label>
+                <input type="checkbox" id="check_02" value="fav_02" name="chech_fav">
+                <label for="check_02">IT</label>
+                <input type="checkbox" id="check_03" value="fav_03" name="chech_fav">
+                <label for="check_03">연예</label>
+                <input type="checkbox" id="check_04" value="fav_04" name="chech_fav">
+                <label for="check_04">경제</label>
+            </p>
+            <p>
+                <span class="form_title">증명사진 : </span>
+                <input type="file" neme="img=file">
+            </p>
+            <p>
+                <span class="form_title">날짜 : </span>
+                <input type="date" neme="date" min="2024-01-01" max="2024-12-31" step="1">
+            </p>
+            <p>
+                <span class="form_title">연령대 : </span>
+                <input type="number" neme="age" min="10" max="100" step="10" placeholder="10">
+            </p>
+            <p>
+                <span class="form_title">선호하는 컬러 : </span>
+                <input type="color" name="color-01">
+                <input type="color" name="color-02">
+                <input type="color" name="color-03">
+            </p>
+            <p>
+                <span class="form_title">지역 선택 : </span>
+                <select name="city">
+                    <optgroup label="서울시">
+                        <option value="gangnam-gu">강남구</option>
+                        <option value="seacho-gu">서초구</option>
+                        <option value="jung-gu">중구</option>
+                    </optgroup>
+                    <optgroup label="경기도">
+                        <option value="seongnam-si">성남시</option>
+                        <option value="suwon-si">수원시</option>
+                        <option value="anyang-si">안양시</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <span class="form_title">회원가입 코멘트 : </span>
+                <textarea name="comment" rows="6" cols="30" placeholder="가입 인사를 남겨주세요"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="회원가입" onclick="suc()">
+                <input type="reset" value="다시작성하기">
+            </p>
+        </fieldset>
+    </form>
+    <!-- <form action="">
+        <fieldset>
+            <legend>회원가입2</legend>
+        </fieldset> -->
+    </form>
+    <script>
+        function suc(){
+            const id = prompt('추천인 아이디를 입력하세요.');
+            alert(`추천인은 ${id}입니다.`);
+        }
+        // function suc(){
+        //     alert('회원가입이 완료되었습니다');
+        // }
+        // function suc(){
+        //     confirm('정말 회원가입 하시겠습니까?');
+        // }
+        // function suc(){
+        //     prompt('추천인 아이디를 입력해주세요');
+        // }
+    </script>
+</body>
+</html>

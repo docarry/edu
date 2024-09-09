@@ -1,0 +1,15 @@
+input[type="text"]{
+    width: 300px;
+    outline: none;
+    text-indent: 3em;
+    letter-spacing: 2px;
+}
+span[class="form_title"]{
+    display: block;
+}
+input[name="gender"]{
+    accent-color: #ff0;
+}
+input[name="chech_fav"]{
+    accent-color: #f00;
+}
