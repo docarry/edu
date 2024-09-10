@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 만들기</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>회원가입</legend>
+            <p>
+                <span class="text-title">이름 : </span>
+                <input type="text" name="name" placeholder="한글로 입력해 주세요" required autofocus>
+            </p>
+            <p>
+                <span class="text-title">아이디 : </span>
+                <input type="text" name="ID" placeholder="영문 및 숫자 조합만 가능" required>
+            </p>
+            <p>
+                <span class="text-title">비밀번호 : </span>
+                <input type="password" name="PW" placeholder="영문 및 숫자 조합만 가능" required>
+            </p>
+            <p>
+                <span class="text-title">성별 : </span>
+                <input type="radio" name="gender" value="man" id="man" checked>
+                <label for="man">남자</label>
+                <input type="radio" name="gender" value="woman" id="woman">
+                <label for="woman">여자</label>
+                <input type="radio" name="gender" value="nocomment" id="nocomment">
+                <label for="nocomment">선택안함</label>
+            </p>
+            <p>
+                <span class="text-title">관심사 : </span>
+                <input type="checkbox" name="fav" value="fav01" id="fav01" checked>
+                <label for="fav01">변우석</label>
+                <input type="checkbox" name="fav" value="fav02" id="fav02">
+                <label for="fav02">송강</label>
+                <input type="checkbox" name="fav" value="fav03" id="fav03">
+                <label for="fav03">이도현</label>
+                <input type="checkbox" name="fav" value="fav04" id="fav04">
+                <label for="fav04">차은우</label>
+            </p>
+            <p>
+                <span class="text-title">좋아하는 사진 : </span>
+                <input type="file" name="img=file">
+            </p>
+            <p>
+                <span class="text-title">날짜 : </span>
+                <input type="date" name="date" min="2024-01-01" max="2024-12-31" step="1">
+            </p>
+            <p>
+                <span class="text-title">연령대 : </span>
+                <input type="number" name="age" min="10" max="100" step="10" placeholder="10">
+            </p>
+            <p>
+                <span class="text-title">좋아하는 컬러 : </span>
+                <input type="color" name="color01">
+                <input type="color" name="color02">
+                <input type="color" name="color03">
+            </p>
+            <p>
+                <span class="text-title">사는 곳 : </span>
+                <select name="city">
+                    <optgroup label="서울시">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    </optgroup>
+                    <optgroup label="경기도">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <span class="text-title">회원가입 코멘트 : </span>
+                <textarea name="comment" rows="6" cols="30" placeholder="가입 인사를 남겨 주세요"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="회원가입">
+                <input type="reset" value="다시작성하기">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
