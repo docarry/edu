@@ -1,0 +1,24 @@
+#toggleBtn{
+    background-color: #00f;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+#toggleBtn .toggleBtnOn{
+    display: block;
+    background-color: #f00;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.moveBtn{
+    background-color: #ff0 !important;
+    left: 30px !important;
+}
