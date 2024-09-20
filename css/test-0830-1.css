@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrap{
+    width: 600px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#wrap .randomBox{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#wrap .randomNum{
+    background-color: #edacb1;
+    height: 50px;
+    line-height: 50px;
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    color: #5c0a5c;
+}
+
+#wrap .checkBox{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+#inputNumBox{
+    background-color: #edacb1;
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #5c0a5c;
+}
+#inputNumBox::placeholder{
+    color: #901090;
+    font-size: 18px;
+    text-align: center;
+}
+#wrap .makeBtn,
+#wrap .checkBtn{
+    background-color: #5c0a5c;
+    color: #fff;
+    border: 0;
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.checkBox.disabled #inputNumBox,
+.checkBox.disabled .checkBtn{
+    background-color: #ccc !important;
+    cursor: default !important;
+    color: #fff;
+}
