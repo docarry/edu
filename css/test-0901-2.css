@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    width: 600px;
+    margin: 50px auto;
+}
+
+.creatNumberDiv,
+.checkNumberDiv{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+#creatKey{
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #e7e7e7;
+    color: #000;
+    text-align: center;
+}
+#checkKey{
+    width: 300px;
+    outline: none;
+    background-color: #e7e7e7;
+    color: #000;
+    line-height: 50px;
+    border: 0;
+    text-align: center;
+    font-size: 26px;
+}
+#checkKey::placeholder{
+    color: #333;
+    font-size: 16px;
+}
+
+#creatKeyBtn,
+#checkKeyBtn{
+    border: 0;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    width: 120px;
+}
+
+.checkNumberDiv.disabled #checkKey{
+    color: #ccc;
+}
+.checkNumberDiv.disabled #checkKeyBtn{
+    background-color: #ccc;
+    cursor: default;
+}
