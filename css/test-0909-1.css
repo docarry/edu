@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+#main{
+    width: 1200px;
+    margin: 0 auto;
+}
+#main .list-text{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+#main .list-text li{
+    display: flex;
+    gap: 30px;
+}
+#main .list-text li a{
+    display: inline-block;
+}
+#main .list-text li span{
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: #000;
+    transform: skew(-20deg);
+}
+#main .list-text li:last-child span{
+    display: none;
+}
+
+#main .listbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main .listbox li{
+    width: 24%;
+}
+#main .listbox li a{}
+#main .listbox li a img{
+    display: block;
+    width: 100%;
+}
+#main .listbox li a span{}
