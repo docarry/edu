@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모달 검색창 테스트</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 네비바 스타일 */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000; /* 모달보다 위에 표시되도록 */
+}
+
+/* 아이콘 버튼 스타일 */
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 모달 dim 처리 */
+.modal::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* 기본적으로 숨김 */
+    z-index: -1; /* 모달 내용보다 아래에 표시되도록 */
+}
+
+.modal.open::before {
+    display: block; /* 모달이 열릴 때 dim 효과 표시 */
+}
+
+/* 모달 스타일 */
+.modal {
+    display: none; /* 모달을 기본적으로 숨김 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* 모달의 너비를 100%로 설정 */
+    height: calc(100% - 50px); /* 네비바 높이를 제외한 나머지 높이 */
+    background-color: white;
+    box-sizing: border-box;
+    z-index: 999; /* 네비바 아래에 표시되도록 */
+    top: 50px; /* 네비바 아래에서부터 열리도록 */
+    /* padding: 20px; */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <button id="searchButton" class="icon-button">
+            <img src="/img/icon/Search_alt.svg" alt="Search Icon" id="searchIcon">
+        </button>
+    </nav>
+    
+    <div id="modal" class="modal">
+        <input type="text" placeholder="검색어를 입력하세요...">
+    </div>
+
+
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const searchButton = document.getElementById('searchButton');
+    const searchIcon = document.getElementById('searchIcon');
+    const modal = document.getElementById('modal');
+
+    // 열기/닫기 버튼 클릭 시 모달의 표시 상태를 토글합니다.
+    searchButton.addEventListener('click', () => {
+        if (modal.style.display === 'none' || modal.style.display === '') {
+            modal.style.display = 'block';
+            modal.classList.add('open');
+            searchIcon.src = '/img/icon/xBtn.svg'; // 열기 아이콘을 닫기 아이콘으로 변경
+        } else {
+            modal.style.display = 'none';
+            modal.classList.remove('open');
+            searchIcon.src = '/img/icon/Search_alt.svg'; // 닫기 아이콘을 열기 아이콘으로 변경
+        }
+    });
+});
+
+
+
+
+
+    </script>
+</body>
+</html>
